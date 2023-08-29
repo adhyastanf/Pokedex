@@ -1,0 +1,46 @@
+.card {
+  border-radius: 0.5rem;
+  border: 1px solid;
+  width: 6.5rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--grass);
+}
+
+.card div:first-child {
+  padding: 0.25rem 0.5rem 0 0.5rem;
+  height: 1rem;
+  box-sizing: border-box;
+}
+.card div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.card .figure,
+.card img {
+  display: flex;
+  justify-content: center;
+  outline: none;
+}
+
+.card .figure,
+.card div:first-child {
+  background-color: white;
+}
+
+.card p {
+  font-size: 0.625rem;
+  color: white;
+}
+
+.card div:first-child p {
+  color: black;
+  text-align: end;
+  font-size: 0.5rem;
+  line-height: 0.75rem;
+}

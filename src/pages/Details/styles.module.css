@@ -1,0 +1,130 @@
+.container {
+  width: 360px;
+  height: 640px;
+  background-color: var(--grass);
+  overflow-y: auto;
+  padding: 1.5rem 0 0 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 168px;
+  border-radius: 0 0 10px 10px;
+}
+
+.container::after {
+  position: absolute;
+  display: block;
+  content: url('../../assets/bgPokeball.svg');
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.container > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 1.5rem;
+}
+.container > div:first-child h2 {
+  flex: 1;
+}
+
+.container p,
+.container span {
+  font-size: 0.625rem;
+}
+
+.container > div:first-child :is(h2, p) {
+  color: white;
+}
+
+.container > section {
+  background-color: white;
+  margin: 0 0.25rem 0.25rem 0.25rem;
+  flex: 1;
+  border-radius: 0.5rem;
+  padding: 0 1.25rem;
+}
+
+.container > section > div:first-child {
+  display: flex;
+  margin-top: -168px;
+  justify-content: center;
+}
+
+/* konten */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+img {
+  display: flex;
+  z-index: 9999;
+  position: relative;
+}
+
+.content h5 {
+  text-align: center;
+  line-height: 1rem;
+}
+
+.content > div.first {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.content > :is(div.first, div.boxStats) {
+  width: 100%;
+}
+
+.content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.content > div.first > div > p:first-child {
+  padding: 0.5rem 0;
+}
+
+/* box stats */
+
+.boxStats {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.boxStats > div:last-child{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.stats{
+    height: .25rem;
+    background-color:var(--fire);
+    border-radius: .25rem;
+    margin: 6px 0;
+}
+
+/* lastboxStats */
+
+.stats{
+  position: relative;
+}
+.stats > div {
+  position: absolute;
+  top: 0;
+  bottom:0px;
+  left: 0;
+  /* width: 100px; */
+  /* right: 100px; */
+
+}
